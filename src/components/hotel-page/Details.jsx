@@ -25,6 +25,7 @@ function Details() {
       try {
         const response = await hotelService.getHotelById(id);
         setHotel(response.data);
+        console.log(response.data)
       } catch (error) {
         console.error(error);
       } finally {

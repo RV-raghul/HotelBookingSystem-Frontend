@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router';
 import useLogout from '../hooks/useLogout';
 import logo from '../../assets/Logo.png'
 import profile from  '../../assets/profile.png'
+import logoutImg from '../../assets/logout_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg'
 
 function Navbar({ setIsAuthenticated }) {
   const logout = useLogout();
@@ -84,7 +85,7 @@ function Navbar({ setIsAuthenticated }) {
           title="Logout"
         >
           <img
-            src="src/assets/logout_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+            src={logoutImg}
             alt="logout"
           />
         </div>

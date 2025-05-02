@@ -3,6 +3,10 @@ import { useNavigate } from 'react-router';
 import HotelCard from './HotelCard';
 import hotelService from '../../service/hotel.service';
 import { ThreeCircles } from 'react-loader-spinner';
+import checkin from '../assets/check-in.png'
+import checkout from '../assets/check-out.png'
+import nightStay from '../assets/NightStay.png'
+import guestImg from '../assets/Guest.png'
 
 function HotelListing({ checkInDate, checkOutDate, guest, city }) {
   const [hotels, setHotels] = useState([]);
@@ -64,22 +68,22 @@ function HotelListing({ checkInDate, checkOutDate, guest, city }) {
           {/* Details */}
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <InfoBlock
-              img="src/components/assets/check-in.png"
+              img={checkin}
               label="Check-In"
               value={formatDate(checkInDate)}
             />
             <InfoBlock
-              img="src/components/assets/check-out.png"
+              img={checkout}
               label="Check-Out"
               value={formatDate(checkOutDate)}
             />
             <InfoBlock
-              img="src/components/assets/NightStay.png"
+              img={nightStay}
               label="Nights"
               value={daysDifference}
             />
             <InfoBlock
-              img="src/components/assets/Guest.png"
+              img={guestImg}
               label="Guests"
               value={guest}
             />
