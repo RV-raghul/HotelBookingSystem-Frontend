@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router';
 import toast from 'react-hot-toast';
 import apiService from '../../service/api.service';
 import apiRoutes from '../../utils/ApiRoutes';
+import logo from '../../assets/Logo_Black.png'
 
 function SignUp() {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ function SignUp() {
         {/* Left Panel */}
         <div className="border-black border-b-2 md:border-b-0 md:border-r-2 w-full md:w-1/3 p-6 flex flex-col justify-center items-center bg-gray-50">
           <img
-            src="/src/components/assets/Logo_Black.png"
+            src={logo}
             alt="Logo"
             className="w-20 h-20 mb-4"
           />

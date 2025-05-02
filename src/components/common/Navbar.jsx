@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import useLogout from '../hooks/useLogout';
+import logo from '../../assets/Logo.png'
+import profile from  '../../assets/profile.png'
 
 function Navbar({ setIsAuthenticated }) {
   const logout = useLogout();
@@ -32,7 +34,7 @@ function Navbar({ setIsAuthenticated }) {
   return (
     <div className="w-full h-[10vh] bg-black flex justify-between sticky top-0 z-50">
       <div className="flex ml-2 items-center">
-        <img src="src/assets/Logo.png" alt="logo" className="h-20" />
+        <img src={logo} alt="logo" className="h-20" />
         <h1 className="playwrite-hu-header text-white text-3xl ml-1">onlyHotels</h1>
       </div>
       <div className="flex items-center mr-5 relative" ref={dropdownRef}>
@@ -40,7 +42,7 @@ function Navbar({ setIsAuthenticated }) {
           className="border border-white rounded-full hover:cursor-pointer"
           onClick={toggleDropdown}
         >
-         { role === 'USER' && ( <img src="src/assets/profile.png" alt="profile" className="w-12 h-12" />) }
+         { role === 'USER' && ( <img src={profile} alt="profile" className="w-12 h-12" />) }
         </div>
 
         {dropdownOpen && role === 'USER' && (
