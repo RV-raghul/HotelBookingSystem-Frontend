@@ -1,3 +1,6 @@
+# Admin Test Username - raghul@gmail.com
+# Admin Test Password - Admin@123
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
