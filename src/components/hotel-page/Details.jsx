@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import hotelService from '../../service/hotel.service';
 import rupeeImg from '../assets/rupee.png';
 import locationImg from '../assets/location.png';
-import guestImg from '../assets/guest.png';
+import guestImg from '../assets/Guest.png';
 import typeImg from '../assets/type.png';
 import wifiImg from '../assets/Modem.png';
 import tvImage from '../assets/tvImage.png';
