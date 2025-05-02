@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+
+*{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+  user-select: none;
+}
+
+.header{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600; 
+  font-style: normal;
+}
+
+.subheader{
+  
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; 
+    font-style: normal;
+  
+}
+
+
+.playwrite-hu-header {
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .bg {
+    width: 100vw;
+    height: 90vh;
+    background-image: url('../src/components/assets/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .date-range-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .date-picker {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .date-picker label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .input-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
+    background: #fff;
+  }
+  
+  .input-box .icon {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .input-box input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+
+  /*  Sidebar */
+
+  .sidebar {
+    width: 60px; /* Initial collapsed width */
+    height: 100vh;
+    background-color: #f8fafc;
+    color: white;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    z-index: 1000
+  }
+  
+  .sidebar.expanded {
+    width: 150px; 
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 15px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .text {
+    white-space: nowrap;
+    color: black;
+    font-size: 16px;
+  }
+  
+
+  .btn-image{
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 50px;
+    transform: scale(3);
+    opacity: 0;
+  }
+
+
+
+  /* Pop button */
+
+
+  .pop-button {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .pop-button:hover {
+    transform: scale(1.1); /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Pop shadow */
+  }
+
+  .pop-button:active {
+    transform: scale(0.98); /* Slight press effect */
+  }
