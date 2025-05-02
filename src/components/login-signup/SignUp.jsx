@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 import toast from 'react-hot-toast';
 import apiService from '../../service/api.service';
 import apiRoutes from '../../utils/ApiRoutes';
-import logo from '../../assets/Logo_Black.png'
+import logo from '../assets/Logo_black.png'
 
 function SignUp() {
   const navigate = useNavigate();
